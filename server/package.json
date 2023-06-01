@@ -2,10 +2,11 @@
   "name": "mission-control",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "jest"
+    "test": "jest --detectOpenHandles",
+    "test-watch": "jest --watch"
   },
   "author": "",
   "license": "ISC",
