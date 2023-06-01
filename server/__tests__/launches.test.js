@@ -9,6 +9,7 @@ describe('Launches API tests', () => {
     //intit db
     beforeAll(async () => {
         await connectDB(process.env.MONGO_URL)
+        await loadPlanetsData()
     })
 
     afterAll(async ()=>{
